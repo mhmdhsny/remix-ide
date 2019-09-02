@@ -60,12 +60,12 @@ module.exports = class Filepanel extends ViewPlugin {
       return new FileExplorer(self._components.registry, self._deps.fileProviders[key])
     }
 
-    var fileSystemExplorer = createProvider('localhost')
-    var swarmExplorer = createProvider('swarm')
-    var githubExplorer = createProvider('github')
-    var gistExplorer = createProvider('updateGist')
-    var httpExplorer = createProvider('http')
-    var httpsExplorer = createProvider('https')
+    const fileSystemExplorer = createProvider('localhost')
+    const swarmExplorer = createProvider('swarm')
+    const githubExplorer = createProvider('github')
+    const gistExplorer = createProvider('updateGist')
+    const httpExplorer = createProvider('http')
+    const httpsExplorer = createProvider('https')
 
     self.remixdHandle = new RemixdHandle(fileSystemExplorer, self._deps.fileProviders['localhost'], appManager)
 
